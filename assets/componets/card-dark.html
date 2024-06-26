@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            background-color: black;
+            width: 160px;
+            height: 258px;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            font-size: 1.5;
+        }
+
+        .img-container {
+            width: 140px;
+            height: 140px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            color: white;
+            width: 100%;
+        }
+
+        .info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info h3{
+            color: #FDA8FF;
+            margin: 0;
+        }
+
+        .info svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .heart-icon path {
+            fill: white;
+        }
+
+        .trash-icon path {
+            stroke: white;
+            stroke-width: 5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .card button{
+            width: 100%;
+            border-radius: 5px;
+            background-color: #BBEFFF;
+            font-weight: 600;
+            padding: 0.3rem;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="img-container">
+            <img src="../img/demoImg/snesImg.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Product Name</h3>
+            <div>
+                <strong>$150</strong>
+                <svg class="heart-icon" width="46" height="42" viewBox="0 0 46 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.5435 3.53445C20.1578 1.43925 17.0192 0.167175 13.5809 0.167175C6.11408 0.167175 0.0610352 6.16643 0.0610352 13.5669C0.0610352 16.9747 1.32701 20.1027 3.44101 22.4672L22.561 41.4172L41.115 23.0282L41.6635 22.4499C43.7775 20.0852 45.061 16.9747 45.061 13.5669C45.061 6.16643 39.008 0.167175 31.541 0.167175C28.1028 0.167175 24.9643 1.43925 22.5785 3.53448L22.561 3.51713L22.5435 3.53445ZM22.561 8.54063L22.6983 8.66105L24.8308 6.54738L25.053 6.35215C26.778 4.83733 29.044 3.91718 31.541 3.91718C36.9685 3.91718 41.311 8.269 41.311 13.5669C41.311 15.9954 40.4073 18.2107 38.9018 19.9124L38.434 20.4054L22.561 36.1374L6.16789 19.8899C4.69586 18.2067 3.81104 15.9944 3.81104 13.5669C3.81104 8.269 8.15351 3.91718 13.5809 3.91718C16.0779 3.91718 18.344 4.83733 20.069 6.35213L20.2913 6.54725L22.424 8.66098L22.561 8.54063Z" />
+                </svg>
+                <svg class="trash-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 30V42.5" />
+                    <path d="M35 30V42.5" />
+                    <path d="M10 17.5H50" />
+                    <path d="M15 25V45C15 49.1423 18.3579 52.5 22.5 52.5H37.5C41.6423 52.5 45 49.1423 45 45V25" />
+                    <path
+                        d="M22.5 12.5C22.5 9.73857 24.7386 7.5 27.5 7.5H32.5C35.2615 7.5 37.5 9.73857 37.5 12.5V17.5H22.5V12.5Z" />
+                </svg>
+            </div>
+        </div>
+        <button>Buy</button>
+    </div>
+</body>
+
+</html>

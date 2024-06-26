@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --font: "IBM Plex Mono", monospace;
+    --pink: #FDA8FF;
+    --lightBlue: #BBEFFF;
+     font-size: 10px;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span {
+    font-family: var(--font);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+}
+
+header a:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
+
+header a {
+    font-weight: 500;
+    transition: all 1s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+header svg {
+    width: 40px;
+    height: 40px;
+    transition: all 1s ease;
+    /* Aplica la transición a todos los cambios */
+}
+
+header svg .googles {
+    transition: inherit;
+    /* Hereda la transición del svg padre */
+}
+
+header a:nth-child(1):hover svg .googles {
+    color: #990200;
+    fill: #990200;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin: 1.5rem 0;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#search {
+    height: 2rem;
+    width: 90%;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding-left: 1.2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+}
+
+.card {
+    background-color: black;
+    width: 160px;
+    height: 270px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    font-size: 1.5;
+    filter: drop-shadow(2px 2px 3px gray)
+}
+
+.img-container {
+    width: 140px;
+    height: 140px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 15px;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info h3 {
+    color: #FDA8FF;
+    font-weight: 450;
+    margin: 0;
+}
+
+.info strong {
+    font-weight: bold;
+}
+
+.info svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.heart-icon path {
+    fill: white;
+}
+
+.trash-icon path {
+    stroke: white;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.card button,
+.card-h button,
+form button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #BBEFFF;
+    font-weight: 600;
+    padding: 0.3rem;
+    border: none;
+    filter: drop-shadow(1px 1px 0.3px rgba(187, 239, 255, 0.8));
+    &:hover{
+        filter: drop-shadow(1px 1px 0.2px rgba(50, 50, 50, 0.8));
+    }
+}
+
+.card-h button {
+    margin: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+
+.card-h {
+    background-color: black;
+    width: 320px;
+    height: 220px;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    font-size: 1.5;
+    filter: drop-shadow(2px 2px 3px gray);
+}
+
+.card-h .info {
+    width: 50%;
+}
+
+
+/*Upload Form */
+
+form {
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: solid 2px black;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    position: relative;
+}
+
+fieldset label {
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-weight: 450;
+    padding-left: 1.3rem;
+}
+
+.error-msg {
+    display: none;
+    position: absolute;
+    width: 50%;
+    /* height: 1.3rem; */
+    border-radius: 1rem;
+    padding-left: 1rem;
+    transform: translateY(-12px) translateX(30px);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #990200;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        align-self: center;
+        width: 70%;
+        margin: 3% 15%;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
